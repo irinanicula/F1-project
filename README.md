@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Conceptual description
+
+This is a single page application which displays a list of the world F1 champions by year since 2005 to present. On click of an element of the list, the page navigates to a new list which contains all the winning drivers of that year. 
+
+## Technical specifications
+
+This application is built with React, specifically using functional components and it is tested using Jest and React Testing Library.
+For styling I chose Sass because of its awesome variable and nesting features that help keep the code clean and DRY.
+
 ## Available Scripts
 
 In the project directory, you can run:
