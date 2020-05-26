@@ -4,7 +4,7 @@ table{
     height: 100%;
     color: #38383F;
 
-    .champions-table{
+    .winners-table{
         display: flex;
         flex-direction: column;
 
@@ -30,10 +30,7 @@ table{
             align-items: center;
             width: 100%;
             color: #38383F;
-            cursor: pointer;
-            &:hover {
-                font-weight: 600;
-            }
+            padding: 5px 5px 5px 15px;
 
             td{
                 text-align: start;
@@ -45,6 +42,11 @@ table{
             &:nth-child(even) {
                 background: #F4F4F4;
             }
+        }
+
+        &__champion {
+            color: #5cdb94;
+            font-weight: 600;
         }
     }
 }
