@@ -22,32 +22,6 @@ table{
                 padding: 20px 0 0 0;
             }
         }
-
-        &__row {
-            text-decoration: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            color: #38383F;
-            padding: 5px 5px 5px 15px;
-
-            td{
-                text-align: start;
-                width: 150px;
-                margin: 0;
-                padding: 20px 0 20px 0;
-            }
-            
-            &:nth-child(even) {
-                background: #F4F4F4;
-            }
-        }
-
-        &__champion {
-            color: #5cdb94;
-            font-weight: 600;
-        }
     }
 }
 

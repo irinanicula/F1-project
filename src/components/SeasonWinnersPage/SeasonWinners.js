@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PageTitle from '../PageTitle/PageTitle';
 import logo from '../../assets/logo.png';
 import './SeasonWinners.scss';
@@ -16,15 +16,16 @@ const SeasonWinners = (props) => {
                 <tbody className="winners-table">
                 <tr className="winners-table__header">
                     <th>Wins</th>
-                    <th>First name</th>
-                    <th>Last name</th>
                     <th>Points</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Position</th>
                 </tr>
-                {props.data.map((datum) => {
+                {props.winners.map((winner) => {
                     return (
                         <TableRow
-                            row={[datum.wins, datum.points, datum.givenName, datum.familyName]}
-                            champion={datum.champion}
+                            row={[winner.wins, winner.points, winner.givenName, winner.familyName, winner.position]}
+                            champion={winner.champion}
                       />
                     );
                 })}

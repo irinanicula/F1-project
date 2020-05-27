@@ -1,0 +1,23 @@
+.table-row {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #38383F;
+
+    td{
+        text-align: start;
+        width: 150px;
+        margin: 0;
+        padding: 20px 0 20px 0;
+    }
+    
+    &:nth-child(even) {
+        background: #F4F4F4;
+    }
+    &__champion {
+        color: #5cdb94;
+        font-weight: 600;
+    }
+}

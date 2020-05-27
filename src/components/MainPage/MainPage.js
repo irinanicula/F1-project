@@ -19,17 +19,17 @@ const MainPage = (props) => {
             <th>First name</th>
             <th>Last name</th>
           </tr>
-          {props.data.map((datum) => {
+          {props.champions.map((champion) => {
             return (
               <Link
                 to="/season-winners"
                 className="champions-table__row"
-                key={datum.championshipYear}
+                key={champion.championshipYear}
               >
                 <TableRow
-                  row={[datum.championshipYear, datum.givenName, datum.familyName]}
+                  row={[champion.championshipYear, champion.givenName, champion.familyName]}
                   handleClick={props.handleClick}
-                  season={datum.championshipYear}
+                  season={champion.championshipYear}
                 />
               </Link>
             );
