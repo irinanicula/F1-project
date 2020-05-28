@@ -55,6 +55,21 @@ Today I was planning to write tests, but before that, I fixed some issues that w
 
 Also, I discovered an easier solution to highlighting the champion... It seems the data also returns the position of the winner in the championship... So I used that in a conditional and bam! Got what I needed without any extra functions :) 
 
+After this part, I started writing tests. I did my best to guide myself by the react testing library principle: test how the UI changes, but I found it a bit difficult seeing as I was used to testing the code. In the end, I managed to test a few components, but how well i did that, we shall see on Day 6. 
+
+Lessons learned: dedicate time to reading documentation, don't guess and copy paste solutions, it is more time consuming than actually understanding and applying. 
+
+### Day 6
+
+Last day! Today I looked over the trello board and tried to tackle all the stories left under the "implementation" label. Two of the more difficult ones were "Unit test App component" and "Figure out a proper way to fetch data and redirect at the same time". I haven't been able to finish either of them because I was feeling pressured to finish everything I planned before our meeting so I started reading a lot of random articles and not finishing any of them...(there is a saying in Romanian about running around like a headless chicken... well I guess I found the meaning of that today).
+
+Overall, this day hasn't been the most productive, but I did manage to finish some important tasks, like making the app responsive for mobile and tablet and making the highlight of the champion look cooler by adding a little trophy emoji :D
+
+Lessons learned: same as the day before
+Overall learnings: All the technical stuff mentioned in the previous days, plus that I have so much more to learn! There is also an insane amount of information/courses/tutorials online and it can seem overwhelming, but with a bit of structure and guidance the learning path is much smoother! I had a lot of fun doing this project and I feel like I learned so much, but it is not finished yet! I hope to be able to continue working on this so I can add some nice features to it :D
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:

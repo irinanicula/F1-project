@@ -19,7 +19,7 @@ const MainPage = (props) => {
             {props.champions.map((champion) => {
               return (
                 <Link
-                  to="/season-winners"
+                  to="/season/winners"
                   className="champions-table__row"
                   key={champion.championshipYear}
                 >

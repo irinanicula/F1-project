@@ -11,7 +11,7 @@ const TableRow = (props) => {
         props.champion === true ? "table-row__champion" : ""
       }`}
       onClick={() =>
-        !props.handleClick ? null : props.handleClick(props.season)
+        props.handleClick ?  props.handleClick(props.season) : null
       }
     >
       {tableItems}

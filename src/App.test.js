@@ -3,7 +3,15 @@ import { render } from '@testing-library/react';
 import { BrowserRouter } from "react-router-dom";
 import App from './App';
 
-test('renders learn react link', () => {
-  const { getByTestId } = render(<BrowserRouter><App /></BrowserRouter>);
-  expect(getByTestId("app")).toBeInTheDocument();
-});
+describe("App", () => {
+it('renders the app', () => {
+    const { getByTestId } = render(<BrowserRouter><App /></BrowserRouter>);
+    expect(getByTestId("app")).toBeInTheDocument();
+  });
+
+it('renders the landing page', () => {
+    const { getByTestId } = render(<BrowserRouter><App /></BrowserRouter>);
+    expect(getByTestId("landing-page")).toBeInTheDocument();
+  });
+})
+

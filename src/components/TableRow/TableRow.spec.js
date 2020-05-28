@@ -5,7 +5,7 @@ import TableRow from "./TableRow";
 const handleClick = jest.fn();
 
 describe("renders TableRow component", () => {
-  it("renders data cells with data from props", () => {
+it("renders data cells with data from props", () => {
     const { getByText } = render(<TableRow row={["jake", "finn", "BMO"]} />);
     const firstDataCell = getByText("jake");
     expect(firstDataCell).toBeInTheDocument();
@@ -24,7 +24,7 @@ describe("renders TableRow component", () => {
     expect(handleClick).toHaveBeenCalledTimes(0);
   });
 
-  it("does not fire click event without prop", () => {
+  it("fires click event when there is a prop", () => {
     const { getByRole } = render(
       <TableRow row={["jake"]} champion={true} handleClick={handleClick} />
     );

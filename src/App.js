@@ -7,6 +7,7 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 const App = () => {
   let [championsData, setChampionsData] = useState([]);
   let [winnersData, setWinnersData] = useState([]);
+  let [error, setError] = useState("");
 
   const getChampionsData = () => {
     fetch("http://ergast.com/api/f1/driverStandings/1.json?limit=500")
@@ -16,6 +17,9 @@ const App = () => {
       //setting the champions state to be the transformed array
       .then((jsonResponse) => {
         setChampionsData(transformChampionsArray(jsonResponse));
+      })
+      .catch((error) => {
+        return error ? setError(error) : null;
       });
   };
 
@@ -28,6 +32,9 @@ const App = () => {
       //setting the winners state to be the transformed array 
       .then((jsonResponse) => {
         return setWinnersData(transformWinnersArray(jsonResponse));
+      })
+      .catch((error) => {
+        return error ? setError(error) : null;
       });
   };
 
@@ -75,16 +82,20 @@ const App = () => {
     getChampionsData();
   }, []);
 
-
   return (
     <div className="App" data-testid="app">
+      {/* uses the HTML5 History API */}
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
-            <MainPage champions={championsData} handleClick={handleClick} />
+            {
+              error ? <h1>{error.name} : {error.message}</h1> : <MainPage champions={championsData} handleClick={handleClick}/>  
+            }
           </Route>
-          <Route path="/season-winners">
-            <SeasonWinners winners={winnersData} />
+          <Route path="/season/winners">
+            {
+              error ?  <h1>{error.name} : {error.message}</h1> : <SeasonWinners winners={winnersData} /> 
+            }
           </Route>
         </Switch>
       </BrowserRouter>
