@@ -16,21 +16,21 @@ const SeasonWinners = (props) => {
         {/* had to change class names to winners because the same class name creates confusion and due to specificity (mainPage also has an a element) it was loading only MainPage styles for the table rows*/}
         <tbody className="winners-table">
           <tr className="winners-table__header">
-            <th>Wins</th>
-            <th>Points</th>
+            <th>Position</th>
             <th>First Name</th>
             <th>Last Name</th>
-            <th>Position</th>
+            <th>Points</th>
+            <th>Wins</th>
           </tr>
           {props.winners.map((winner, index) => {
             return (
               <TableRow
                 row={[
-                  winner.wins,
-                  winner.points,
+                  winner.position,
                   winner.givenName,
                   winner.familyName,
-                  winner.position,
+                  winner.points,
+                  winner.wins,
                 ]}
                 champion={winner.champion}
                 key={index}
