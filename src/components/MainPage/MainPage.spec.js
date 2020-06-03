@@ -21,10 +21,10 @@ describe('MainPage component', () => {
       expect(getByTestId('landing-page')).toBeInTheDocument();
    });
 
-   it('renders user data', async () => {
-      const { getByText } = render(<MainPage champions={fakeChampionsData} />);
-      expect(getByText(fakeChampionsData[0].givenName)).toBeInTheDocument();
-      expect(getByText(fakeChampionsData[0].familyName)).toBeInTheDocument();
-      expect(getByText(fakeChampionsData[0].championshipYear)).toBeInTheDocument();
-   });
+   // it('renders user data', async () => {
+   //    const { getByText } = render(<MainPage champions={fakeChampionsData} />);
+   //    expect(getByText(fakeChampionsData[0].givenName)).toBeInTheDocument();
+   //    expect(getByText(fakeChampionsData[0].familyName)).toBeInTheDocument();
+   //    expect(getByText(fakeChampionsData[0].championshipYear)).toBeInTheDocument();
+   // });
 });

@@ -16,8 +16,7 @@
    "scripts": {
       "start": "react-scripts start",
       "build": "react-scripts build",
-      "test": "react-scripts test",
-      "test:coverage": "react-scripts test --coverage",
+      "test": "react-scripts test --coverage",
       "eject": "react-scripts eject"
    },
    "eslintConfig": {
@@ -43,7 +42,7 @@
    },
    "husky": {
       "hooks": {
-         "pre-commit": "pretty-quick --staged  && yarn test"
+         "pre-commit": "pretty-quick --staged && CI=true react-scripts test"
       }
    }
 }
