@@ -1,63 +1,62 @@
 @import '../../assets/variables';
 
-table{
-    width: 100%;
-    height: 100%;
-    color: $main-text-color;
+table {
+   width: 100%;
+   height: 100%;
+   color: $main-text-color;
 
-    .champions-table{
-        display: flex;
-        flex-direction: column;
+   .champions-table {
+      display: flex;
+      flex-direction: column;
 
-        &__header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 15px;
-            width: 100%;
-            th {
-                text-align: center;
-                width: 150px;
-                margin: 0;
-                font-size: 20px;
-                padding: 20px 0 0 0;
-            }
-        }
+      &__header {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 15px;
+         width: 100%;
+         th {
+            text-align: center;
+            width: 150px;
+            margin: 0;
+            font-size: 20px;
+            padding: 20px 0 0 0;
+         }
+      }
 
-        &__row {
-            text-decoration: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            color: $main-text-color;
-            cursor: pointer;
-            &:hover {
-                font-weight: 600;
-            }
+      &__row {
+         text-decoration: none;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+         color: $main-text-color;
+         cursor: pointer;
+         &:hover {
+            font-weight: 600;
+         }
 
-            td{
-                text-align: center;
-                width: 150px;
-                margin: 0;
-                padding: 20px 0 20px 0;
-            }
-            
-            &:nth-child(even) {
-                background: $row-alternate-color;
-            }
-        }
-    }
+         td {
+            text-align: center;
+            width: 150px;
+            margin: 0;
+            padding: 20px 0 20px 0;
+         }
+
+         &:nth-child(even) {
+            background: $row-alternate-color;
+         }
+      }
+   }
 }
 
 @media screen and (max-width: 640px) {
-    table{
-        width: 100vw;
-    
-        .champions-table{
-            width: 100vw;
-            flex-direction: column;
-        }
-    }
-}
+   table {
+      width: 100vw;
 
+      .champions-table {
+         width: 100vw;
+         flex-direction: column;
+      }
+   }
+}

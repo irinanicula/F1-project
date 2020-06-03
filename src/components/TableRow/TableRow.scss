@@ -1,61 +1,63 @@
 @import '../../assets/variables';
 
 .table-row {
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    color: $main-text-color;
+   text-decoration: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   color: $main-text-color;
 
-    td{
-        text-align: center;
-        width: 150px;
-        margin: 0;
-        padding: 20px 0 20px 0;
-    }
-    
-    &:nth-child(even) {
-        background: $row-alternate-color;
-    }
-    
-    &__champion {
-        font-weight: 600;
-        &::before {
-            content: "🏆";
-            margin-left: 5px;
-            font-size: 25px;
-            margin-right: -30px;  
-        }
-    }
+   td {
+      text-align: center;
+      width: 150px;
+      margin: 0;
+      padding: 20px 0 20px 0;
+   }
+
+   &:nth-child(even) {
+      background: $row-alternate-color;
+   }
+
+   &__champion {
+      font-weight: 600;
+
+      &::before {
+         content: '🏆';
+         margin-left: 5px;
+         font-size: 25px;
+         margin-right: -30px;
+      }
+   }
 }
 
 @media screen and (min-width: 641px) and (max-width: 768px) {
-    .table-row {
-        &__champion {
-            &::before {
-                content: "🏆";
-                margin-left: 20px;
-                margin-right: -45px;
-            }
-        }
-    }
+   .table-row {
+      &__champion {
+         &::before {
+            content: '🏆';
+            margin-left: 20px;
+            margin-right: -45px;
+         }
+      }
+   }
 }
 
 @media screen and (max-width: 640px) {
-    .table-row {
-        td{
-            width: 100px;
-            font-size: 15px;
-        }
-        
-        &__champion {
-            font-weight: 600;
-            &::before {
-                content: "";
-                margin-left: 0px;
-                margin-right: 0;  
-            }
-        }
-    }
-  }
+   .table-row {
+      td {
+         width: 100px;
+         font-size: 15px;
+      }
+
+      &__champion {
+         font-weight: 600;
+
+         &::before {
+            content: '';
+            margin-left: 0px;
+            margin-right: 0;
+         }
+      }
+   }
+}
