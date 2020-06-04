@@ -1,5 +1,5 @@
 import React from 'react';
-import './TableRow.scss';
+import '../../stylesheets/main.scss';
 
 const TableRow = (props) => {
    let tableItems = props.row.map((data, index) => <td key={index}>{data}</td>);

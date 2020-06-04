@@ -1,5 +1,5 @@
 import React from 'react';
-import './MainPage.scss';
+import '../../stylesheets/main.scss';
 import logo from '../../assets/logo.png';
 import PageTitle from '../PageTitle/PageTitle';
 import { Link } from 'react-router-dom';

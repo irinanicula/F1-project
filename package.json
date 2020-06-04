@@ -44,5 +44,12 @@
       "hooks": {
          "pre-commit": "pretty-quick --staged && CI=true react-scripts test"
       }
+   },
+   "jest": {
+      "collectCoverageFrom": [
+         "**/src/components/**/*.{js,jsx}",
+         "!**/node_modules/**",
+         "!**/vendor/**"
+      ]
    }
 }

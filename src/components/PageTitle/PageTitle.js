@@ -1,5 +1,5 @@
 import React from 'react';
-import './PageTitle.scss';
+import '../../stylesheets/main.scss';
 
 const PageTitle = (props) => {
    return (

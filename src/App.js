@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
+import './stylesheets/main.scss';
 import MainPage from './components/MainPage/MainPage';
 import SeasonWinners from './components/SeasonWinnersPage/SeasonWinners';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';

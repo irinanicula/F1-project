@@ -1,7 +1,7 @@
 import React from 'react';
 import PageTitle from '../PageTitle/PageTitle';
 import logo from '../../assets/logo.png';
-import './SeasonWinners.scss';
+import '../../stylesheets/main.scss';
 import TableRow from '../TableRow/TableRow';
 import { useHistory } from 'react-router-dom';
 
