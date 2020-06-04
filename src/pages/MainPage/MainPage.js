@@ -1,9 +1,9 @@
 import React from 'react';
 import '../../stylesheets/main.scss';
 import logo from '../../assets/logo.png';
-import PageTitle from '../PageTitle/PageTitle';
+import PageTitle from '../../components/PageTitle/PageTitle';
 import { Link } from 'react-router-dom';
-import TableRow from '../TableRow/TableRow';
+import TableRow from '../../components/TableRow/TableRow';
 
 const MainPage = (props) => {
    return (

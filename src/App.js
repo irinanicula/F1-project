@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './stylesheets/main.scss';
-import MainPage from './components/MainPage/MainPage';
-import SeasonWinners from './components/SeasonWinnersPage/SeasonWinners';
+import MainPage from './pages/MainPage/MainPage';
+import SeasonWinners from './pages/SeasonWinnersPage/SeasonWinners';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import { getChampionsData, getWinnersData } from './services/getDrivers';
 

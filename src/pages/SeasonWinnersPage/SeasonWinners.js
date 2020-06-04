@@ -1,8 +1,8 @@
 import React from 'react';
-import PageTitle from '../PageTitle/PageTitle';
+import PageTitle from '../../components/PageTitle/PageTitle';
 import logo from '../../assets/logo.png';
 import '../../stylesheets/main.scss';
-import TableRow from '../TableRow/TableRow';
+import TableRow from '../../components/TableRow/TableRow';
 import { useHistory } from 'react-router-dom';
 
 const SeasonWinners = (props) => {
