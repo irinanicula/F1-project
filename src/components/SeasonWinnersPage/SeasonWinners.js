@@ -19,7 +19,7 @@ const SeasonWinners = (props) => {
          >
             Back
          </button>
-         <table data-testid="season-winners-table">
+         <table className="table" data-testid="season-winners-table">
             {/* had to change class names to winners because the same class name creates confusion and due to specificity (mainPage also has an a element) it was loading only MainPage styles for the table rows*/}
             <tbody className="winners-table">
                <tr className="winners-table__header">

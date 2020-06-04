@@ -9,7 +9,7 @@ const MainPage = (props) => {
    return (
       <div data-testid="landing-page">
          <PageTitle title="champions from 2005 to present" logo={logo} />
-         <table>
+         <table className="table">
             <tbody className="champions-table">
                <tr className="champions-table__header">
                   <th>Year</th>

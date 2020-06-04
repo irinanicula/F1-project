@@ -6,7 +6,7 @@
    width: 100%;
    color: $main-text-color;
 
-   td {
+   &__item {
       text-align: center;
       width: 150px;
       margin: 0;
@@ -17,7 +17,7 @@
       background: $row-alternate-color;
    }
 
-   &__champion {
+   &--champion {
       font-weight: 600;
 
       &::before {
@@ -31,7 +31,7 @@
 
 @media screen and (min-width: 641px) and (max-width: 768px) {
    .table-row {
-      &__champion {
+      &--champion {
          &::before {
             content: '🏆';
             margin-left: 20px;
