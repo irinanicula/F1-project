@@ -11,7 +11,7 @@ const MainPage = (props) => {
          <PageTitle title="champions from 2005 to present" logo={logo} />
          <table className="table">
             <tbody className="champions-table">
-               <tr className="champions-table__header">
+               <tr className="champions-table__header" align="center">
                   <th>Year</th>
                   <th>First name</th>
                   <th>Last name</th>

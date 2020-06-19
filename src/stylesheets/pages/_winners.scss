@@ -18,38 +18,22 @@
    color: $main-text-color;
 
    .winners-table {
-      display: flex;
-      flex-direction: column;
+      display: inline-block;
       width: 100vw;
-
       &__header {
-         display: flex;
-         justify-content: center;
-         align-items: center;
          padding: 15px;
          width: 100%;
-
+         display: inline-block;
          th {
             text-align: center;
             width: 150px;
             margin: 0;
             font-size: 20px;
             padding: 20px 0 0 0;
-         }
-      }
-   }
-}
-
-@media screen and (max-width: 640px) {
-   table {
-      .winners-table {
-         &__header {
-            th {
-               text-align: center;
+            @media screen and (max-width: 640px) {
                width: 100px;
                margin: 0;
-               font-size: 17px;
-               padding: 20px 0 0 0;
+               font-size: 15px;
             }
          }
       }

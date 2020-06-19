@@ -2,16 +2,22 @@ import React from 'react';
 import '../../stylesheets/main.scss';
 
 const TableRow = (props) => {
-   let tableItems = props.row.map((data, index) => (
-      <td className="table-row__item" key={index}>
-         {data}
+   let tableItems = props.row.map((tableItem, index) => (
+      <td
+         className={`table-row__item ${
+            props.champion === true && index === 0 ? 'table-row--champion' : ''
+         }`}
+         key={index}
+      >
+         {tableItem}
       </td>
    ));
 
    return (
       <tr
+         align="center"
          role="table-data"
-         className={`table-row ${props.champion === true ? 'table-row--champion' : ''}`}
+         className="table-row"
          onClick={() => (props.handleClick ? props.handleClick(props.season) : null)}
       >
          {tableItems}

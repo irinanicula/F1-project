@@ -4,31 +4,28 @@
    color: $main-text-color;
 
    .champions-table {
-      display: flex;
-      flex-direction: column;
-
+      width: 100vw;
       &__header {
-         display: flex;
-         justify-content: center;
-         align-items: center;
          padding: 15px;
          width: 100%;
+         display: inline-block;
          th {
             text-align: center;
             width: 150px;
             margin: 0;
             font-size: 20px;
             padding: 20px 0 0 0;
+            .sort-descending {
+               transform: rotate(180deg);
+            }
          }
       }
 
       &__row {
          text-decoration: none;
-         display: flex;
-         justify-content: center;
-         align-items: center;
          width: 100%;
          color: $main-text-color;
+         display: inline-flex;
          cursor: pointer;
          &:hover {
             font-weight: 600;
